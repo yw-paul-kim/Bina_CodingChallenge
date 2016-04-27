@@ -12,8 +12,9 @@ public class PasswordValidator {
         }
 
         for (ValidationRule rule : rules) {
-            if (!rule.validate(password))
+            if (!rule.validate(password)) {
                 return false;
+            }
         }
 
         return true;
